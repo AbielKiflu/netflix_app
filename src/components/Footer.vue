@@ -8,7 +8,7 @@
     <font-awesome-icon icon="fa-brands fa-youtube" size="xl" inverse/>
 </div>
 
-    <div class="footer_links">
+    <div class="links">
     <ul> 
         <li><a href="#" >  Audio Description</a></li>
     <li><a href="#" > Investor Relations </a></li>
@@ -54,18 +54,22 @@ export default {
 <style  lang="scss" scoped>
 
 footer{
-  max-width: 70%;
+  max-width: 50%;
+  margin: 0 auto;
+  padding:0 20px ;
+
     .share{
     display: flex;
-    margin:1rem 0;
-    gap: 1rem;
+    margin:1rem 0.5rem ;
+    gap: 2rem;
     justify-content: flex-start;
 }
-    .footer_links{
+    .links{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap:1rem;
      
     ul{
         list-style: none;
@@ -77,7 +81,7 @@ footer{
                 a{
                     text-decoration:none;
                     color:gray;
-                   
+                    font-size: 0.813rem;
                 }
             }
     }
@@ -92,7 +96,7 @@ button{
 }
 p{
     color: gray;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 
