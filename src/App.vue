@@ -1,16 +1,16 @@
 <template>
- <div id="app">{{ message }}</div>
+   <Navigation/>
 </template>
 
 <script>
- 
+ import Navigation from "./components/Navigation";
 
 export default {
   name: 'App',
-  data() {
-      return {
-        message: 'Hello Vue!'
-      }
+ 
+
+components: {
+  Navigation
 },
 
 mounted() {
