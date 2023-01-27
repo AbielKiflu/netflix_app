@@ -1,23 +1,35 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import App from './App.vue';
+import {createRouter,createWebHistory} from 'vue-router';
+import WelcomeView from "@/views/Welcome.vue"
+import HomeView from "@/views/Home.vue";
+import MoviesView from "@/views/Movies.vue";
 
 
-Vue.use(VueRouter);
+ const router = createRouter({
 
-const routes = [
-  { 
-    path: '/',
-    name: 'home',
-    component:App,}
-];
+  history: createWebHistory(),
+  routes: [
+    {
+      path: '/',
+      name: 'welcome',
+      component: WelcomeView
 
+    },
+    {
+      path: '/home',
+      name: 'home',
+      component: HomeView,
 
-const router =new VueRouter({
-    mode: 'history',
-    base:process.env.BASE_URL,
-    routes,
-});
+    },
+    {
+      path: '/movies',
+      name: 'movies',
+      component: MoviesView,
 
+    }
+  
+  ],
+
+ });
+ 
 
 export default router;

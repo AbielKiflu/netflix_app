@@ -1,18 +1,18 @@
 <template>
-    <h2>Movies</h2>
+    <h2>Welcome</h2>
 </template>
 
 <script >
  
-export default{
-   name:"MoviesView",
-}
+ export default{
+    name:"WelcomeView",
+ }
 
 </script>
 
 
 <style scoped>
-
+ 
 
 
 </style>
