@@ -1,12 +1,14 @@
 <template>
  
   <button  class="btn" id="count" @click.prevent="handleSubmit">{{ counterStore.count }}</button>
-  <router-link to="/">Welcome</router-link>
-  <router-link to="/home">Home</router-link>
-  <router-link to="/movies">Movies</router-link>
+
    
 
-  <router-view></router-view>
+  <router-view>
+    <router-link to="/">Welcome</router-link>
+    <router-link to="/home">Home</router-link>
+    <router-link to="/movies">Movies</router-link>
+  </router-view>
 
 </template>
 
