@@ -7,16 +7,11 @@
             </router-link>
         </div>
         <ul>
-            <li>  <router-link class="link" to="#"> Home</router-link></li>
-            <li> <router-link class="link" to="#"> Tv Shows</router-link></li>
-            <li>  <router-link class="link" to="#"> Movies</router-link></li>
-            <li> <router-link class="link" to="#"> My List</router-link></li>
+            <router-link to="/">Welcome</router-link>
+            <router-link to="/home">Home</router-link>
+            <router-link to="/movies">Movies</router-link>
          </ul>
-
-         <ul>
-            <li> <router-link class="link" to="#"> Logout</router-link></li>
-         </ul>
-
+ 
     </nav>
 </header>
 </template>
