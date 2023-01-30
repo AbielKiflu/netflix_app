@@ -9,8 +9,7 @@ defineProps(
         answer:String,
     }
 );
-
-console.log(isToggled.value);
+ 
  const toggle=()=>{
     isToggled.value=!isToggled.value;    
  }
@@ -23,8 +22,8 @@ console.log(isToggled.value);
         <div class="head"> 
             <p>{{ question }}</p>
             <div  @click="toggle">
-                <font-awesome-icon v-if="!isToggled" icon="fa-solid fa-plus" size="2x"  inverse/> 
-                <font-awesome-icon v-if="isToggled" icon="fa-solid fa-xmark" size="2x"  inverse/> 
+                <font-awesome-icon v-if="!isToggled" icon="fa-solid fa-plus"   inverse/> 
+                <font-awesome-icon v-if="isToggled" icon="fa-solid fa-xmark"   inverse/> 
             </div>
         </div>
         <div class="drawer" v-if="isToggled"> 
@@ -40,7 +39,8 @@ console.log(isToggled.value);
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
-    width: 60%;
+    width: 100%;
+    margin-bottom: 0.5rem;
 
  }
  

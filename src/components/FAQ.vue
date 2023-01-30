@@ -26,7 +26,6 @@
 <template>
      <div v-for="faq in faqdata" :key="faq.id"> 
        <FAQItem :question="faq.question" :answer="faq.answer"/>
-        
     </div>
 </template>
 
