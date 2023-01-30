@@ -1,5 +1,19 @@
 <script setup>
- 
+ import {ref,defineProps} from "vue";
+
+ const isToggled=ref(false);
+
+defineProps(
+    {
+        question:String,
+        answer:String,
+    }
+);
+
+console.log(isToggled.value);
+ const toggle=()=>{
+    isToggled.value=!isToggled.value;    
+ }
 
  
 </script>
@@ -7,11 +21,14 @@
 <template>
      <div class="faqItem"> 
         <div class="head"> 
-            <p>What can I watch</p>
-            <button>+</button>
+            <p>{{ question }}</p>
+            <div  @click="toggle">
+                <font-awesome-icon v-if="!isToggled" icon="fa-solid fa-plus" size="2x"  inverse/> 
+                <font-awesome-icon v-if="isToggled" icon="fa-solid fa-xmark" size="2x"  inverse/> 
+            </div>
         </div>
-        <div class="drawer"> 
-      <p>Hi there</p>
+        <div class="drawer" v-if="isToggled"> 
+            <p>{{ answer }}</p>
         </div>
     </div>
 </template>
