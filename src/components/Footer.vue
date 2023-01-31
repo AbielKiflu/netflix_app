@@ -8,12 +8,12 @@
     <font-awesome-icon icon="fa-brands fa-youtube" size="xl" inverse/>
 </div>
 
-    <div class="links">
+<div class="links">
     <ul> 
         <li><a href="#" >  Audio Description</a></li>
-    <li><a href="#" > Investor Relations </a></li>
-    <li><a href="#" >  Legal Notices</a></li>
- </ul>
+        <li><a href="#" > Investor Relations </a></li>
+        <li><a href="#" >  Legal Notices</a></li>
+    </ul>
 
  <ul> 
     <li><a href="#" > Help Center </a></li>
@@ -54,10 +54,9 @@ export default {
 <style  lang="scss" scoped>
 
 footer{
-  max-width: 50%;
+  
   margin: 0 auto;
   padding:0 20px ;
-
     .share{
     display: flex;
     margin:1rem 0.5rem ;
@@ -67,13 +66,14 @@ footer{
     .links{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     gap:1rem;
+
      
     ul{
         list-style: none;
         display: flex;
+        flex-grow: 1;
         gap:1rem;
         flex-direction: column;
             li{
@@ -81,7 +81,8 @@ footer{
                 a{
                     text-decoration:none;
                     color:gray;
-                    font-size: 0.813rem;
+                    font-size: 0.8rem;
+                    font-weight: 600;
                 }
             }
     }

@@ -45,7 +45,7 @@ defineProps(
  }
  
  .head{
-    background-color: rgb(73, 70, 70);
+    background-color: rgb(30, 30, 30);
     color: white;
     display: flex;
     justify-content:space-between;
@@ -55,7 +55,7 @@ defineProps(
 
 .drawer{
     display: flex;
-    background-color: rgb(73, 70, 70);
+    background-color: rgb(30, 30, 30);
     color: white;
     border-top-color:#141414 ;
     padding: 1rem;
