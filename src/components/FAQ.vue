@@ -16,6 +16,16 @@
         id:3,
         question: "How much Netflix costs?",
         answer:  "Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from 8,99 € to 17,99 € a month. No extra costs, no contracts."
+    },
+    {
+        id:4,
+        question: "How do I cancel?",
+        answer:  "Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime."
+    },
+    {
+        id:5,
+        question: "Is Netflix good for kids?",
+        answer:  "The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see."
     }
     ]
 

@@ -4,6 +4,8 @@
   import NavigationMenu from "@/components/NavigationMenu";
   import GetStarted from "@/components/GetStarted";
   import FAQ from "@/components/FAQ";
+  import ServiceComp from "@/components/ServiceComp";
+
 </script>
 
 <template>
@@ -23,6 +25,13 @@
   </div>
   </header>
   <PageBreaker/>
+  <ServiceComp/>
+  <PageBreaker/>
+  <ServiceComp/>
+  <PageBreaker/>
+  <ServiceComp/>
+  <PageBreaker/>
+  <h1 class="title">Frequently Asked Questions</h1>
   <FAQ/>
   <PageBreaker/>
   <Footer/>
@@ -36,9 +45,12 @@
     width: 100%;
     height: 100%;
     background-position:center;
-    
 }
 
+.title{
+  font-family:"Helvetica Neue";
+  font-weight: 800;
+}
  
 
 .wrapper{
