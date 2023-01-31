@@ -6,12 +6,12 @@
 
 <template>
    <div class="selection">
-     <span class="langIcon"><font-awesome-icon icon="fa-solid fa-globe"  inverse /></span>
+     <span class="langIcon"><font-awesome-icon icon="fa-solid fa-globe" size="xs" inverse /></span>
   <select>
     <option selected value="en">English</option>
     <option value="fr">French</option>
   </select> 
-  <span class="caretDownIcon"><font-awesome-icon icon="fa-solid fa-caret-down" inverse/></span>
+  <span class="caretDownIcon"><font-awesome-icon icon="fa-solid fa-caret-down" size="sm" inverse/></span>
    </div>
 
 </template>
@@ -38,11 +38,11 @@
 
 select{
   appearance: none;
-   color: white;
-   background-color: rgba(#141414,.9);
-    border-radius: 0.2rem;
-   border: 0.1rem solid white;
-   padding: 0.7rem 3rem;
+  color: var(--light-color);
+  background-color: rgba(#141414,.9);
+  border-radius: 0.1rem;
+  border: 0.1rem solid var(--light-color);
+  padding: 0.35rem 1.8rem;
  
 }
 

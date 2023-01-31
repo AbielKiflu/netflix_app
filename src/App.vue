@@ -15,7 +15,7 @@ import WelcomeView from "@/views/WelcomeView";
    src: url('@/assets/fonts/Helvetica.ttf');
 }
 
-:root{
+*, :root{
   --primary-color: #e50914;
   --dark-color: #141414;
   --light-color: #f4f4f4;
@@ -24,14 +24,14 @@ import WelcomeView from "@/views/WelcomeView";
   padding: 0;
   margin: 0;
   font-family:'Helvetica', sans-serif;
-  
+  //outline: 1px #e50914 solid ;
 }
 
-
+ 
 
 
 body {
-  background-color: black;
+  background-color: var(--dark-color);
 }
 
 </style>

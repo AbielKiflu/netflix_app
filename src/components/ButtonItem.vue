@@ -1,22 +1,28 @@
 <script setup>
- 
+ import { defineProps } from 'vue';
 
+ defineProps({
+   text: {
+     type: String,
+     required: true
+    }
+  });
  
 </script>
 
 <template>
-  <button>Sign In</button>
+  <button>{{ text }}</button>
 </template>
 
 
 <style scoped>
 
 button{
-   color: white;
-   background-color: #e50914;
-   border-radius: 0.3rem;
-   border: 0rem solid #e50914;
-   padding: 0.6rem 1rem;
+  color: var(--light-color);
+  background-color:var(--primary-color);
+  border-radius: 0.2rem;
+  border-color: transparent;
+  padding: 0.35rem;
 
 }
 
