@@ -1,17 +1,23 @@
 <template>
  <div class="wrapper">
     <div class="detail">
-        <h2>Title</h2>
-        <p>We provide everything</p>
+        <h1>{{ title }}</h1>
+        <h2>{{ description }}</h2>
     </div>
     <div class="image">
-        <img src="" alt="">
+        <img :src="require(`@/assets/${image}`)" alt="">
     </div>
  </div>
 </template>
 
 
 <script setup>
+    import { defineProps } from 'vue';
+    defineProps({
+        title: String,
+        description: String,
+        image: String
+    });
     
 </script>
 
@@ -21,15 +27,16 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content:center;
+        align-self:center;
     }
 
     .detail{
         color:var(--light-color);
+        text-align: center;
     }
 
     .image{
-        width: 20rem;
-        height: 10rem;
         border-color: var(--light-color);
     }
 

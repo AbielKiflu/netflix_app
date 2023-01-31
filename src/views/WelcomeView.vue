@@ -6,6 +6,27 @@
   import FAQ from "@/components/FAQ";
   import ServiceComp from "@/components/ServiceComp";
 
+const services=[{
+  id:1,
+  title:"Enjoy on your TV",
+  description:"Watch on Smart TV, Xbox chromecast, Apple TV, Blu-ray players, and more",
+  image:"device-pile.png",
+},
+{
+  id:2,
+  title:"Download your shows to watch offline.",
+  description:"Save your favorites easily and always have something to watch.",
+  image:"mobile.jpg",
+},
+{
+  id:3,
+  title:"Watch everywhere.",
+  description:"Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.",
+  image:"kids.png",
+}]
+
+
+
 </script>
 
 <template>
@@ -25,12 +46,13 @@
   </div>
   </header>
   <PageBreaker/>
-  <ServiceComp/>
-  <PageBreaker/>
-  <ServiceComp/>
-  <PageBreaker/>
-  <ServiceComp/>
-  <PageBreaker/>
+  <div v-for="service in services" :key="service.id">
+    <ServiceComp :title="service.title" :description="service.description" :image="service.image"/>
+    <PageBreaker/>
+  </div>
+ 
+
+  
   <h1 class="title">Frequently Asked Questions</h1>
   <FAQ/>
   <PageBreaker/>
