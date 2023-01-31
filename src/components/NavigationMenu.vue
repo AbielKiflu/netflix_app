@@ -5,7 +5,6 @@
 </script>
 
 <template>
-<header>
     <nav class="nav">
         <router-link class="link" to="/">
                 <svg xmlns="http://www.w3.org/2000/svg"   
@@ -16,10 +15,7 @@
                 <li><DropListItem/></li>
                 <li><ButtonItem text="Sign In"/></li>
             </ul>
- 
     </nav>
-</header>
-<router-view/>
 </template>
 
 
@@ -31,8 +27,8 @@
     background: linear-gradient(black 20%,rgba(0, 0, 0, 0.9) 40%,transparent);
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding:1rem 0;
+    justify-content: space-between;
+    padding:1rem;
     
  
     
@@ -61,13 +57,6 @@ svg{
   fill:var(--primary-color);
 }
 
-header{
-    background:url("@/assets/banner.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    height: 100vh;
-   
-}
+
 
 </style>
