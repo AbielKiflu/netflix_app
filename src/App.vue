@@ -1,5 +1,5 @@
 <script setup>
- 
+//Helvetica
 import WelcomeView from "@/views/WelcomeView";
  
 </script>
@@ -10,15 +10,25 @@ import WelcomeView from "@/views/WelcomeView";
 
 
 <style lang="scss">
-*{
-  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@font-face {
+   font-family: 'Helvetica';
+   src: url('@/assets/fonts/Helvetica.ttf');
+}
+
+:root{
+  --primary-color: #e50914;
+  --dark-color: #141414;
+  --light-color: #f4f4f4;
+
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto','Ubuntu', sans-serif;
- 
+  font-family:'Helvetica', sans-serif;
+  
 }
+
+
+
 
 body {
   background-color: black;
