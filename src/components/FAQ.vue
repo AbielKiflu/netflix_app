@@ -34,19 +34,33 @@
 </script>
 
 <template>
-     <div v-for="faq in faqdata" :key="faq.id"> 
+     <div class="wrapper">
+        <h1 class="title">Frequently Asked Questions</h1>
+     <div class="faqs" v-for="faq in faqdata" :key="faq.id"> 
        <FAQItem :question="faq.question" :answer="faq.answer"/>
     </div>
+     </div>
 </template>
 
 
 <style scoped>
 
-div{
+.wrapper{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
   
 }
+.faqs{
+    display: flex;
+}
+h1{     margin-bottom: 3rem;
+        font-weight: bold;
+        font-size: 3rem;
+        text-align: center;
+        color:var(--light-color);
 
+    }
  
 
 

@@ -14,14 +14,14 @@ const services=[{
 },
 {
   id:2,
-  title:"Download your shows to watch offline.",
-  description:"Save your favorites easily and always have something to watch.",
+  title:"Watch everywhere.",
+  description:"Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.",
   image:"mobile.jpg",
 },
 {
   id:3,
-  title:"Watch everywhere.",
-  description:"Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.",
+  title:"Create profiles for kids.",
+  description:"Send kids on adventures with their favorite characters in a space made just for them—free with your membership.",
   image:"kids.png",
 }]
 
@@ -50,10 +50,7 @@ const services=[{
     <ServiceComp :title="service.title" :description="service.description" :image="service.image"/>
     <PageBreaker/>
   </div>
- 
-
   
-  <h1 class="title">Frequently Asked Questions</h1>
   <FAQ/>
   <PageBreaker/>
   <Footer/>
@@ -81,23 +78,6 @@ const services=[{
   background: linear-gradient(180deg,transparent,rgb(0, 0, 0,0.15) 25%,transparent);
 }
 
-h1, h2,h3{
-  color:var(--light-color);
-  text-align: center;
-  padding: 1rem;
-}
-h1{
-  
-  font-size: 2.5rem;
-}
-
-h2{
  
-  font-size: 1.6rem;
-}
-
-h3{
-  margin-top: 5%;
-}
 
 </style>

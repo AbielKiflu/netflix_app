@@ -11,8 +11,8 @@ import WelcomeView from "@/views/WelcomeView";
 
 <style lang="scss">
 @font-face {
-   font-family: 'Helvetica';
-   src: url('@/assets/fonts/helvetica-light.ttf');
+   font-family: 'Helvetica-Bold';
+   src: url('@/assets/fonts/Helvetica-Bold.ttf');
 }
 
 *, :root{
@@ -28,7 +28,6 @@ import WelcomeView from "@/views/WelcomeView";
   font-weight: 500;
   //outline: 1px #e50914 solid ;
 }
-
  
 
 

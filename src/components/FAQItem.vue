@@ -50,7 +50,7 @@ defineProps(
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 0.9rem;
+    padding: 1.3rem;
  }
 
 .drawer{
