@@ -10,11 +10,7 @@ import WelcomeView from "@/views/WelcomeView";
 
 
 <style lang="scss">
-@font-face {
-   font-family: 'Helvetica-Bold';
-   src: url('@/assets/fonts/Helvetica-Bold.ttf');
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *, :root{
   --primary-color: #e50914;
   --dark-color: #141414;
@@ -24,8 +20,7 @@ import WelcomeView from "@/views/WelcomeView";
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family:'Helvetica', sans-serif;
-  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   //outline: 1px #e50914 solid ;
 }
  
@@ -33,8 +28,7 @@ import WelcomeView from "@/views/WelcomeView";
 
 body {
   background-color: #000000;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 </style>

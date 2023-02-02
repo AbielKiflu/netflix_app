@@ -21,7 +21,8 @@
 div{
     display: flex;
     justify-content: center;
-     
+    flex-wrap: wrap;
+    row-gap:0.5rem;
 }
 .callToAction{
      position: relative;
@@ -33,22 +34,20 @@ div{
     right:5%;
     top:50%;
     transform: translate(-50%, -50%);
-    
+    display: block;
 }
 
 input[type="text"]{
     padding: 0.6rem 1rem;
-    font-size: 1.5rem;
      
 }
 
 button{
    color: white;
-   font-size: 1.5rem;
    background-color: var(--primary-color);
    border-color:transparent;
-   padding: 1rem 2.5rem;
-
+   padding: 0.8rem;
+    
 }
 
 

@@ -30,6 +30,7 @@ const services=[{
 </script>
 
 <template>
+  
   <header>
     <NavigationMenu/>
   <div class="wrapper">
@@ -39,12 +40,13 @@ const services=[{
     <h2>
       Watch anywhere. Cancel anytime.
     </h2>
-    <h3>
+    <h4>
       Ready to watch? Enter your email to create or restart your membership.
-    </h3>
+    </h4>
     <GetStarted/>
   </div>
   </header>
+
   <PageBreaker/>
   <div v-for="service in services" :key="service.id">
     <ServiceComp :title="service.title" :description="service.description" :image="service.image"/>
@@ -57,27 +59,47 @@ const services=[{
  
 </template>
 
-<style scoped>
+<style scoped lang="scss">
   header{
-    background:url("@/assets/banner.jpg") no-repeat;
+    position: relative;
+    background:linear-gradient(rgba(0, 0, 0, 0.9) ,rgba(0, 0, 0, 0.7) 100%,transparent)
+    ,url("@/assets/banner.jpg") no-repeat;
     background-size:cover;
     width: 100%;
-    height: 100%;
+    height: 79.1vh;
     background-position:center;
+    display: flex;
+    flex-direction: column;
+     
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        height: 100%;
+        padding: 0.5rem;
+      }
 }
 
-.title{
-  font-family:"Helvetica Neue";
-  font-weight: 800;
+
+
+h1,h2,h3,h4,h5,h6{
+  color: var(--light-color);
+  text-align: center;
 }
+
+//@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  h1{
+  font-weight: bold;
+  font-size: 3rem;
+  max-width:70%;
+}
+}
+
  
-
-.wrapper{
-  margin: 4rem;
-  padding: 2rem;
-  background: linear-gradient(180deg,transparent,rgb(0, 0, 0,0.15) 25%,transparent);
-}
-
  
-
 </style>
