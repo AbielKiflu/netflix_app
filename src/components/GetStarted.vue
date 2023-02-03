@@ -38,8 +38,7 @@ div{
 }
 
 input[type="text"]{
-    padding: 0.6rem 1rem;
-     
+    padding: 0.6rem 1rem;     
 }
 
 button{

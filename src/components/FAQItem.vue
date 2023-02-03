@@ -39,9 +39,8 @@ defineProps(
     display: flex;
     flex-direction: column;
     gap: 0.07rem;
-    width: 100%;
     margin-bottom: 0.5rem;
-
+    
  }
  
  .head{
@@ -51,6 +50,7 @@ defineProps(
     justify-content:space-between;
     align-items: center;
     padding: 1.3rem;
+    
  }
 
 .drawer{

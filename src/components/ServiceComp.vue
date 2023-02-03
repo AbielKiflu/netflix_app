@@ -1,8 +1,8 @@
 <template>
  <div class="wrapper">
     <div class="detail">
-        <h2>{{ title }}</h2>
-        <h3>{{ description }}</h3>
+        <h1>{{ title }}</h1>
+        <h2>{{ description }}</h2>
     </div>
     <div class="image">
         <img :src="require(`@/assets/${image}`)" alt="Picture">
@@ -28,7 +28,9 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content:center;
-        align-self:center;   
+        align-self:center;
+        gap:2rem;
+        padding: 3rem;   
     }
 
     .reverse{

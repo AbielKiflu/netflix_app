@@ -34,31 +34,35 @@
 </script>
 
 <template>
+ 
      <div class="wrapper">
-        <h1 class="title">Frequently Asked Questions</h1>
+<div>
+    <h1 class="title">Frequently Asked Questions</h1>
      <div class="faqs" v-for="faq in faqdata" :key="faq.id"> 
        <FAQItem :question="faq.question" :answer="faq.answer"/>
     </div>
+</div>
      </div>
+     
 </template>
 
 
 <style scoped>
 
-.wrapper{
+.wrapper {
+    margin: 2rem auto;
+    padding: 1rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-  
+    
 }
-.faqs{
-    display: flex;
-}
-h1{     margin-bottom: 3rem;
-        font-weight: bold;
-        font-size: 3rem;
-        text-align: center;
-        color:var(--light-color);
+
+
+h1{     
+    margin-bottom: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color:var(--light-color);
 
     }
  

@@ -27,8 +27,8 @@
     align-items: center;
     justify-content: space-between;
     margin:0 1rem;
-
-    
+    padding: 1rem;
+ 
     
     ul{
         
@@ -37,7 +37,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        gap:0.5rem;
+        gap:1rem;
         
         
         

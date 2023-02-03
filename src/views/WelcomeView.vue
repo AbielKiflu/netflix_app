@@ -62,7 +62,7 @@ const services=[{
 <style scoped lang="scss">
   header{
     position: relative;
-    background:linear-gradient(rgba(0, 0, 0, 0.9) ,rgba(0, 0, 0, 0.7) 100%,transparent)
+    background:linear-gradient(rgba(0, 0, 0, 0.7) ,rgba(0, 0, 0, 0.7) 100%,transparent)
     ,url("@/assets/banner.jpg") no-repeat;
     background-size:cover;
     width: 100%;
@@ -96,7 +96,7 @@ h1,h2,h3,h4,h5,h6{
   h1{
   font-weight: bold;
   font-size: 3rem;
-  max-width:70%;
+  max-width:40%;
 }
 }
 
