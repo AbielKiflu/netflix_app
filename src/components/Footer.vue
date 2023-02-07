@@ -57,20 +57,22 @@ footer{
   
   margin: 0 auto;
   padding:0 20px ;
-    .share{
+
+  .share{
     display: flex;
     margin:1rem 0.5rem ;
     gap: 2rem;
     justify-content: flex-start;
 }
-    .links{
+.links{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap:1rem;
-
+   
      
     ul{
+        flex: 1;
         list-style: none;
         display: flex;
         flex-grow: 1;
