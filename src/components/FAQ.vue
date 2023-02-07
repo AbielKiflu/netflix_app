@@ -50,7 +50,7 @@
 <style scoped>
 
  .wrapper {
-    margin:0 1rem;
+    margin:3rem 1rem;
  }
 
  

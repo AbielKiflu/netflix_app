@@ -55,7 +55,7 @@ export default {
 
 footer{
   
-  margin: 0 auto;
+  margin: 2rem auto;
   max-width: 780px;
   padding:0 20px ;
 

@@ -1,19 +1,21 @@
 <template>
- <div class="wrapper">
-    <div class="detail">
-        <h1>{{ title }}</h1>
+    <div class="wrapper" :class="{even:id%2==0, odd:id%2==1}">
+    <div class="detail" >
+        <h1>{{ title}}</h1>
         <h2>{{ description }}</h2>
     </div>
     <div class="image">
         <img :src="require(`@/assets/${image}`)" alt="Picture">
     </div>
  </div>
+ 
 </template>
 
 
 <script setup>
-    import { defineProps } from 'vue';
+   import { defineProps } from 'vue';
     defineProps({
+        id:Number,
         title: String,
         description: String,
         image: String
@@ -25,13 +27,24 @@
 <style lang="scss" scoped>
     .wrapper {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content:center;
         align-self:center;
         gap:2rem;
         padding: 3rem;   
     }
+
+    .odd{
+        flex-direction: row-reverse;
+    }
+
+    .even{
+        flex-direction: row;
+    }
+
+ 
+
+  
 
     .reverse{
         flex-direction: row-reverse;
@@ -50,15 +63,11 @@
     h1{
         font-weight: bold;
         font-size: 3rem;
-        text-align: center;
     }
-    h2{
-         text-align: center;
-    }
+   
 
     .image{
-        max-width: 30rem;
-        max-height: auto;
+        max-width: 25rem;
         border-color: var(--light-color);
     }
 

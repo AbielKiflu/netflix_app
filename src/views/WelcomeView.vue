@@ -49,7 +49,7 @@ const services=[{
 
   <PageBreaker/>
   <div v-for="service in services" :key="service.id">
-    <ServiceComp :title="service.title" :description="service.description" :image="service.image"/>
+    <ServiceComp :title="service.title" :description="service.description" :image="service.image" :id="service.id"/>
     <PageBreaker/>
   </div>
   <FAQ/>
