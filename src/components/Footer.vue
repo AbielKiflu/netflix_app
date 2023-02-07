@@ -56,6 +56,7 @@ export default {
 footer{
   
   margin: 0 auto;
+  max-width: 780px;
   padding:0 20px ;
 
   .share{

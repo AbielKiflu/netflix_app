@@ -52,9 +52,7 @@ const services=[{
     <ServiceComp :title="service.title" :description="service.description" :image="service.image"/>
     <PageBreaker/>
   </div>
-  <div class="center">
-      <FAQ/>
-  </div>
+  <FAQ/>
 
 
   <PageBreaker/>
