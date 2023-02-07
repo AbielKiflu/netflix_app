@@ -1,43 +1,45 @@
 <template>
-<footer class="footer">
+<div class="wrapper">
+    <footer class="footer">
 
-    <div class="share">
-    <font-awesome-icon icon="fa-brands fa-facebook-f" size="xl" inverse />
-    <font-awesome-icon icon="fa-brands fa-instagram" size="xl" inverse/>
-    <font-awesome-icon icon="fa-brands fa-twitter" size="xl" inverse/>
-    <font-awesome-icon icon="fa-brands fa-youtube" size="xl" inverse/>
+<div class="share">
+<font-awesome-icon icon="fa-brands fa-facebook-f" size="xl" inverse />
+<font-awesome-icon icon="fa-brands fa-instagram" size="xl" inverse/>
+<font-awesome-icon icon="fa-brands fa-twitter" size="xl" inverse/>
+<font-awesome-icon icon="fa-brands fa-youtube" size="xl" inverse/>
 </div>
 
 <div class="links">
-    <ul> 
-        <li><a href="#" >  Audio Description</a></li>
-        <li><a href="#" > Investor Relations </a></li>
-        <li><a href="#" >  Legal Notices</a></li>
-    </ul>
+<ul> 
+    <li><a href="#" >  Audio Description</a></li>
+    <li><a href="#" > Investor Relations </a></li>
+    <li><a href="#" >  Legal Notices</a></li>
+</ul>
 
- <ul> 
-    <li><a href="#" > Help Center </a></li>
-    <li><a href="#" > Jobs </a></li>
-    <li><a href="#" >Cookie Preferences  </a></li>
- </ul>
+<ul> 
+<li><a href="#" > Help Center </a></li>
+<li><a href="#" > Jobs </a></li>
+<li><a href="#" >Cookie Preferences  </a></li>
+</ul>
 
- <ul> 
-    <li><a href="#" > Gift Cards </a></li>
-    <li><a href="#" >  Terms of Use</a></li>
-    <li><a href="#" >Corporate Information  </a></li>
- </ul>
+<ul> 
+<li><a href="#" > Gift Cards </a></li>
+<li><a href="#" >  Terms of Use</a></li>
+<li><a href="#" >Corporate Information  </a></li>
+</ul>
 
- <ul> 
-    <li><a href="#" > Media Center </a></li>
-    <li><a href="#" >  Privacy</a></li>
-    <li><a href="#" >  Contact Us</a></li>
- </ul>
+<ul> 
+<li><a href="#" > Media Center </a></li>
+<li><a href="#" >  Privacy</a></li>
+<li><a href="#" >  Contact Us</a></li>
+</ul>
 </div>
 
 <button> Source Code</button>
 <p>&copy;1997-2023 Netflix, Inc. </p>
 
 </footer>
+</div>
 </template>
 
 
@@ -52,12 +54,13 @@ export default {
 
 
 <style  lang="scss" scoped>
-
+.wrapper {
+    padding: 1rem;
+    background-color: #000000;
+}
 footer{
-  
-  margin: 2rem auto;
-  max-width: 780px;
-  padding:0 20px ;
+    margin: 0.5rem auto;
+    max-width: 780px;
 
   .share{
     display: flex;

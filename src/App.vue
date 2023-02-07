@@ -27,8 +27,11 @@ import WelcomeView from "@/views/WelcomeView";
 
 
 body {
-  background-color: #000000;
+  //background-color: #000000;
+  background-color: #303030;
   font-family: 'Poppins', sans-serif;
+  margin:0 auto;
+ 
 }
 
 </style>

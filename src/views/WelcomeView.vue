@@ -1,6 +1,6 @@
 <script setup>
   import Footer from "@/components/Footer";
-  import PageBreaker from "@/components/PageBreaker";
+ 
   import NavigationMenu from "@/components/NavigationMenu";
   import GetStarted from "@/components/GetStarted";
   import FAQ from "@/components/FAQ";
@@ -47,15 +47,15 @@ const services=[{
   </div>
   </header>
 
-  <PageBreaker/>
+ 
   <div v-for="service in services" :key="service.id">
     <ServiceComp :title="service.title" :description="service.description" :image="service.image" :id="service.id"/>
-    <PageBreaker/>
+ 
   </div>
   <FAQ/>
 
-
-  <PageBreaker/>
+ 
+ 
   <Footer/>
  
 </template>

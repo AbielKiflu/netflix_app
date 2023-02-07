@@ -50,7 +50,10 @@
 <style scoped>
 
  .wrapper {
-    margin:3rem 1rem;
+    background-color: #000000;
+    padding: 2rem;
+    margin: 0.5rem 0;
+  
  }
 
  

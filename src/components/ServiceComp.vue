@@ -26,6 +26,8 @@
 
 <style lang="scss" scoped>
     .wrapper {
+        margin-top: 0.5rem;
+        background-color: #000000;
         display: flex;
         flex-wrap: wrap;
         justify-content:center;
