@@ -36,30 +36,27 @@
 <template>
  
      <div class="wrapper">
-<div>
-    <h1 class="title">Frequently Asked Questions</h1>
-     <div class="faqs" v-for="faq in faqdata" :key="faq.id"> 
-       <FAQItem :question="faq.question" :answer="faq.answer"/>
+        <h1 class="title">Frequently Asked Questions</h1>
+        
+        <div class="faqs" v-for="faq in faqdata" :key="faq.id"> 
+            <FAQItem :question="faq.question" :answer="faq.answer"/>
+        </div>
     </div>
-</div>
-     </div>
+    
      
 </template>
 
 
 <style scoped>
 
-.wrapper {
-    margin: 2rem auto;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    
-}
+ .wrapper {
+    margin:0 1rem;
+ }
 
+ 
 
 h1{     
-    margin-bottom: 3rem;
+    
     font-weight: bold;
     text-align: center;
     color:var(--light-color);

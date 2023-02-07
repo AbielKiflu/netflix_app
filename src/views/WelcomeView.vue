@@ -52,8 +52,11 @@ const services=[{
     <ServiceComp :title="service.title" :description="service.description" :image="service.image"/>
     <PageBreaker/>
   </div>
-  
-  <FAQ/>
+  <div class="center">
+      <FAQ/>
+  </div>
+
+
   <PageBreaker/>
   <Footer/>
  
@@ -78,11 +81,11 @@ const services=[{
         gap: 1rem;
         align-items: center;
         height: 100%;
-        padding: 0.5rem;
+      
       }
 }
 
-
+ 
 
 h1,h2,h3,h4,h5,h6{
   color: var(--light-color);

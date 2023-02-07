@@ -19,46 +19,46 @@ defineProps(
 
 <template>
      <div class="faqItem"> 
-        <div class="head"> 
+        <div class="question"> 
             <h2>{{ question }}</h2>
-            <div  @click="toggle">
+            <span  @click="toggle">
                 <font-awesome-icon v-if="!isToggled" icon="fa-solid fa-plus" size="2x"  inverse/> 
                 <font-awesome-icon v-if="isToggled" icon="fa-solid fa-xmark" size="2x"  inverse/> 
-            </div>
+            </span>
         </div>
-        <div class="drawer" v-if="isToggled"> 
-            <h2>{{ answer }}</h2>
-        </div>
+        <p class="answare" v-if="isToggled"> 
+             {{ answer }}
+        </p>
     </div>
 </template>
 
 
-<style scoped>
+<style lang="scss" scoped>
 
  .faqItem{
-    display: flex;
-    flex-direction: column;
-    gap: 0.07rem;
-    margin-bottom: 0.5rem;
-    
- }
- 
- .head{
+    margin: 0.5rem auto;
+    max-width: 780px;
+
+    .question{
     background-color:var(--gray-color);
     color: var(--light-color);
     display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 1.3rem;
-    
- }
+    justify-content: space-between;
+    padding: 0.5rem;
 
-.drawer{
-    display: flex;
-    background-color: var(--gray-color);
-    color: white;
-    border-top-color:var(--gray-color);
-    padding: 1rem;
-}
+    
+    }
+
+    .answare{
+        background-color: var(--gray-color);
+        border-top-color:var(--gray-color);
+        color: white;
+        padding: 0.5rem;
+        margin-top: 0.1rem;
+      
+    }
+ }
+ 
+
 
 </style>
