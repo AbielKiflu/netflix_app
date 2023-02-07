@@ -1,5 +1,5 @@
 <template>
-<div class="wrapper">
+<section class="wrapper">
     <footer class="footer">
 
 <div class="share">
@@ -9,7 +9,7 @@
 <font-awesome-icon icon="fa-brands fa-youtube" size="xl" inverse/>
 </div>
 
-<div class="links">
+<section class="links">
 <ul> 
     <li><a href="#" >  Audio Description</a></li>
     <li><a href="#" > Investor Relations </a></li>
@@ -33,13 +33,13 @@
 <li><a href="#" >  Privacy</a></li>
 <li><a href="#" >  Contact Us</a></li>
 </ul>
-</div>
+</section>
 
 <button> Source Code</button>
 <p>&copy;1997-2023 Netflix, Inc. </p>
 
 </footer>
-</div>
+</section>
 </template>
 
 

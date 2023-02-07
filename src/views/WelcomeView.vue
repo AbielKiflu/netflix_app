@@ -33,7 +33,7 @@ const services=[{
   
   <header>
     <NavigationMenu/>
-  <div class="wrapper">
+  <div class="center">
     <h1>
       Unlimited movies, TV shows, and more.
     </h1>
@@ -72,11 +72,12 @@ const services=[{
     display: flex;
     flex-direction: column;
      
-    .wrapper{
+    .center{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 1rem;
+        padding: 0.5rem;
+        //max-width: calc(100% - 3rem);
         align-items: center;
         height: 100%;
       

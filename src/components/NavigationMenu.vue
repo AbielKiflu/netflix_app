@@ -24,10 +24,8 @@
 .nav{
     //background: linear-gradient(black 20%,rgba(0, 0, 0, 0.9) 40%,transparent);
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin:0 1rem;
-    padding: 1rem;
+    max-width: calc(100% - 3rem);
  
     
     ul{
@@ -38,9 +36,7 @@
         align-items: center;
         justify-content: space-around;
         gap:1rem;
-        
-        
-        
+       
     }
 
 }

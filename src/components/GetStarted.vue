@@ -5,49 +5,51 @@
 </script>
 
 <template>
-     <div > 
+     <div class="wrapped"> 
       <input type="text" name="" id="" placeholder="Email address">
-      <div class="callToAction"> 
-        <button>Get Started </button>
-        <span class="caretRight">
+     
+        <button class="callToAction">
+            <div>Get Started </div>
+            <div>
+                <span class="caretRight">
             <font-awesome-icon icon="fa-solid fa-angle-right" size="lg" inverse/>
         </span>
-    </div>
+            </div>
+        </button>
+
+    
 </div>
 </template>
 
 
 <style scoped>
-div{
+ 
+ .wrapped{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    row-gap:0.5rem;
-}
-.callToAction{
-     position: relative;
-    
-}
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+ }
 
-.caretRight{
-    position:absolute;
-    right:5%;
-    top:50%;
-    transform: translate(-50%, -50%);
-    display: block;
+.callToAction{
+    background-color: var(--primary-color);
+    border-color:transparent;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.5rem;
+   
 }
+ 
 
 input[type="text"]{
-    padding: 0.6rem 1rem;     
+    padding: 0.5rem 1rem;   
+   
 }
 
-button{
-   color: white;
-   background-color: var(--primary-color);
-   border-color:transparent;
-   padding: 0.8rem;
-    
-}
+ 
 
 
 </style>
