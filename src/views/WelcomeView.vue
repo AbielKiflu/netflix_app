@@ -48,7 +48,7 @@ const services=[{
   </header>
 
  
-  <div v-for="service in services" :key="service.id">
+  <div class="services" v-for="service in services" :key="service.id">
     <ServiceComp :title="service.title" :description="service.description" :image="service.image" :id="service.id"/>
   </div>
   
@@ -66,12 +66,11 @@ const services=[{
     background:linear-gradient(rgba(0, 0, 0, 0.7) ,rgba(0, 0, 0, 0.7) 100%,transparent)
     ,url("@/assets/banner.jpg") no-repeat;
     background-size:cover;
-    width: 100%;
     height: 79.1vh;
     background-position:center;
     display: flex;
     flex-direction: column;
-    margin-bottom: 0.5rem;
+    border-bottom: 0.5rem solid var(--gray-color);
     
     .center{
         display: flex;
@@ -83,7 +82,7 @@ const services=[{
       
       }
 }
-
+ 
  
 
 h1,h2,h3,h4,h5,h6{
@@ -91,7 +90,7 @@ h1,h2,h3,h4,h5,h6{
   text-align: center;
  
 }
-
+ 
 //@media only screen and (min-width: 768px) {...}
 
 /* Large devices (laptops/desktops, 992px and up) */

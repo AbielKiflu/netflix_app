@@ -6,7 +6,7 @@
 
 <template>
     <nav class="nav">
-        <router-link class="link" to="/">
+        <router-link class="link" to="/home">
             <img class="logo" :src="require('@/assets/logo.png')" alt="">        
         </router-link>
             <ul>
@@ -14,6 +14,7 @@
                 <li><ButtonItem text="Sign In"/></li>
             </ul>
     </nav>
+ 
 </template>
 
 

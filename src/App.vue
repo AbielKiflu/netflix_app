@@ -1,11 +1,9 @@
 <script setup>
 //Helvetica
-import WelcomeView from "@/views/WelcomeView";
- 
 </script>
 
 <template>
-   <WelcomeView/>
+    <router-view></router-view>
 </template>
 
 
@@ -20,6 +18,10 @@ import WelcomeView from "@/views/WelcomeView";
 
 }
 
+::selection{
+  background-color: var(--primary-color);
+}
+
 *{
   //outline: 1px #e50914 solid ;
   box-sizing: border-box;
@@ -30,8 +32,9 @@ import WelcomeView from "@/views/WelcomeView";
 
 
 body {
-  //background-color: #000000;
-  background-color: #303030;
+  background-color: #000000;
+  color: var(--light-color);
+ 
 }
 
 </style>

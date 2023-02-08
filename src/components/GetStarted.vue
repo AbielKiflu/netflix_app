@@ -41,7 +41,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 1rem;
+    padding: 1rem;
     border-radius: 0.3rem;
 }
 .callToAction{

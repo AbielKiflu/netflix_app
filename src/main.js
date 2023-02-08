@@ -5,12 +5,17 @@ import router from '@/router';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-import { faTwitter,faFacebookF,faInstagram,faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faThumbsUp } from '@fortawesome/free-regular-svg-icons'
+import { faTwitter,faFacebookF,faInstagram,faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faThumbsUp,faBell } from '@fortawesome/free-regular-svg-icons';
 import { faPlus,faCaretDown,faAngleRight,faXmark,faGlobe,faCirclePlay,faCirclePlus,faCircleChevronDown } from '@fortawesome/free-solid-svg-icons';
 
+import firebase from 'firebase/compat/app';
+import {firebaseConfig} from "./firebase";
 
-library.add(faPlus,faCaretDown,faAngleRight,faXmark,faGlobe,faCirclePlay,faCirclePlus,faCircleChevronDown,faTwitter,faFacebookF,faInstagram,faYoutube,faThumbsUp );
+firebase.initializeApp(firebaseConfig);
+ 
+
+library.add(faPlus,faBell,faCaretDown,faAngleRight,faXmark,faGlobe,faCirclePlay,faCirclePlus,faCircleChevronDown,faTwitter,faFacebookF,faInstagram,faYoutube,faThumbsUp );
 
 const app= createApp(App);
 app.use(router);
