@@ -15,7 +15,7 @@
 </template>
 
 
-<style scoped>
+<style lang="scss" scoped>
 
 button{
   color: var(--light-color);
@@ -23,6 +23,10 @@ button{
   border-radius: 0.2rem;
   border-color: transparent;
   padding: 0.35rem;
+
+  &:hover {
+        background-color:rgb(179, 22, 22);
+    }
 
 }
 

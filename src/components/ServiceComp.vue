@@ -26,14 +26,14 @@
 
 <style lang="scss" scoped>
     .wrapper {
-        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
         background-color: #000000;
         display: flex;
         flex-wrap: wrap;
         justify-content:center;
         align-self:center;
-        gap:2rem;
-        padding: 3rem;   
+        padding: 2rem 0;
+      
     }
 
     .odd{
@@ -64,7 +64,7 @@
     }
     h1{
         font-weight: bold;
-        font-size: 3rem;
+       
     }
    
 

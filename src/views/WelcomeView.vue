@@ -50,8 +50,8 @@ const services=[{
  
   <div v-for="service in services" :key="service.id">
     <ServiceComp :title="service.title" :description="service.description" :image="service.image" :id="service.id"/>
- 
   </div>
+  
   <FAQ/>
 
  
@@ -71,13 +71,13 @@ const services=[{
     background-position:center;
     display: flex;
     flex-direction: column;
-     
+    margin-bottom: 0.5rem;
+    
     .center{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0.5rem;
-        //max-width: calc(100% - 3rem);
+        gap:1rem;
         align-items: center;
         height: 100%;
       
@@ -89,16 +89,17 @@ const services=[{
 h1,h2,h3,h4,h5,h6{
   color: var(--light-color);
   text-align: center;
+ 
 }
 
 //@media only screen and (min-width: 768px) {...}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 800px) {
   h1{
   font-weight: bold;
   font-size: 3rem;
-  max-width:40%;
+ 
 }
 }
 

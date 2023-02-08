@@ -38,13 +38,13 @@ defineProps(
  .faqItem{
     margin: 0.5rem auto;
     max-width: 780px;
-
+    padding: 0 0.5rem;
     .question{
     background-color:var(--gray-color);
     color: var(--light-color);
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem;
+    padding: 1.5rem;
 
     
     }

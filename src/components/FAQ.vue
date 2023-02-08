@@ -1,6 +1,7 @@
 <script setup>
  import FAQItem from "@/components/FAQItem";
-
+ import GetStarted from "@/components/GetStarted";
+  
  const faqdata =[
     {
         id:1,
@@ -37,33 +38,43 @@
  
      <div class="wrapper">
         <h1 class="title">Frequently Asked Questions</h1>
-        
-        <div class="faqs" v-for="faq in faqdata" :key="faq.id"> 
+        <div>
+           <div class="faqs" v-for="faq in faqdata" :key="faq.id"> 
             <FAQItem :question="faq.question" :answer="faq.answer"/>
         </div>
-    </div>
+         
+        </div>
+        
+        <h3>
+            Ready to watch? Enter your email to create or restart your membership.
+        </h3>
+        <GetStarted/>
+  </div>
+
+  
     
      
 </template>
 
 
-<style scoped>
+<style lang="scss" scoped>
 
  .wrapper {
-    background-color: #000000;
-    padding: 2rem;
-    margin: 0.5rem 0;
-  
+   background-color: #000000;
+    padding: 2rem 0;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
  }
 
- 
+ h1,h2,h3,h4,h5,h6{
+    color:var(--light-color);
+    text-align: center;
+ }
 
 h1{     
-    
     font-weight: bold;
-    text-align: center;
-    color:var(--light-color);
-
     }
  
 

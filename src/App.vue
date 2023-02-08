@@ -17,21 +17,21 @@ import WelcomeView from "@/views/WelcomeView";
   --gray-color:#303030;
   --light-color: #f4f4f4;
 
+
+}
+
+*{
+  //outline: 1px #e50914 solid ;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  //outline: 1px #e50914 solid ;
 }
- 
 
 
 body {
   //background-color: #000000;
   background-color: #303030;
-  font-family: 'Poppins', sans-serif;
-  margin:0 auto;
- 
 }
 
 </style>
