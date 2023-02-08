@@ -1,17 +1,21 @@
 
 <template>
    <section class="banner">
-        <h1 class="banner-title">Movie name</h1>
-        <p class="banner-info">
-          The movie is about ... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem possimus 
-          delectus, id suscipit!</p>
+        <h1 class="banner-title">{{ movie?.title }}</h1>
+        <p class="banner-info"> 
+          {{ trimmer(movie?.overview) }}
+        </p>
             <button class="banner-btn">Play</button>
    </section>
   
  </template>
  
  <script setup>
-  
+  import useMovieStore from "@/store/movie";
+  import { storeToRefs } from 'pinia';
+
+   const {movie}=storeToRefs(useMovieStore());
+  const trimmer=(str)=>str.length > 100 && str.substring(0,150)
    
  </script>
  
