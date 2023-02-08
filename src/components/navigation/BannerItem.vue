@@ -19,11 +19,12 @@
  
  
  
- <style scoped>
+ <style lang="scss" scoped>
  
  .banner{
   background-image: url("@/assets/movie.jpg");
   background-repeat: no-repeat;
+  //rgba(51, 51, 51, 0.5)
   background-size: cover;
   background-position: center center;
   height: 45vh;
@@ -36,7 +37,7 @@
  }
 
  .banner-title{
-  font-size: 2.5rem;
+  font-size: 3rem;
  }
 
  .banner-info{
@@ -44,9 +45,12 @@
  }
 
  .banner-btn{
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1rem;
   border-radius: 0.3rem;
- 
+  border: none;
+    &:hover { 
+      background: lightgrey;
+    }
  }
 
 
