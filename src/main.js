@@ -12,10 +12,15 @@ import { faPlus,faCaretDown,faAngleRight,faXmark,faGlobe,faCirclePlay,faCirclePl
 import firebase from 'firebase/compat/app';
 import {firebaseConfig} from "./firebase";
 
+
+
 firebase.initializeApp(firebaseConfig);
  
 
 library.add(faPlus,faBell,faCaretDown,faAngleRight,faXmark,faGlobe,faCirclePlay,faCirclePlus,faCircleChevronDown,faTwitter,faFacebookF,faInstagram,faYoutube,faThumbsUp );
+
+
+
 
 const app= createApp(App);
 app.use(createPinia());

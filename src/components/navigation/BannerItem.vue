@@ -52,7 +52,6 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  outline: 1px solid red;
   gap: 0.5rem;
   padding: 1rem;
  }

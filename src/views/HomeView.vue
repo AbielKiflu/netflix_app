@@ -1,6 +1,5 @@
 
 <template>
-   <NavMenu/>
    <BannerItem/>
 </template>
 
@@ -8,7 +7,6 @@
    import { watchEffect ,onMounted} from 'vue';
    import reqests from "@/api/request";
    import BannerItem from "@/components/navigation/BannerItem";
-   import NavMenu from "@/components/navigation/NavMenu";
    import useMovieStore from "@/store/movie";
    import { storeToRefs } from 'pinia';
 
@@ -28,8 +26,6 @@
       movie.value = 'Error! Could not reach the API. ' + error
    }
 
-   },{
-   flush: 'post'
    })
 
 

@@ -1,12 +1,10 @@
 <template>
-    <h2>Movies</h2>
+    <p>Movies</p>
 </template>
 
 <script >
  
-export default{
-   name:"MoviesView",
-}
+ 
 
 </script>
 

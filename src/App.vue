@@ -1,13 +1,16 @@
 <template>
   <NavMenu/>
-  <router-view></router-view>
+  <main>
+    <RouterView/>
+  </main>
   <Footer/>
 </template>
 
 
 <script setup>
-   import NavMenu from "@/components/navigation/NavMenu";
-   import Footer from "@/components/Footer";
+  import { RouterView } from "vue-router";
+  import NavMenu from "@/components/navigation/NavMenu";
+  import Footer from "@/components/Footer";
 </script>
 
 
