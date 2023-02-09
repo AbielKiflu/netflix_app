@@ -1,10 +1,16 @@
+<template>
+  <NavMenu/>
+  <router-view></router-view>
+  <Footer/>
+</template>
+
+
 <script setup>
-//Helvetica
+   import NavMenu from "@/components/navigation/NavMenu";
+   import Footer from "@/components/Footer";
 </script>
 
-<template>
-    <router-view></router-view>
-</template>
+
 
 
 <style lang="scss">

@@ -1,18 +1,16 @@
 <template>
-
-
+    <h2>My list</h2>
 </template>
 
-
-<script setup>
+<script >
  
-console.log("My List");
+ 
 
 </script>
 
 
 <style scoped>
- 
+
 
 
 </style>

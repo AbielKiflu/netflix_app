@@ -1,18 +1,15 @@
 <template>
-
-
+    <h2>Tv show</h2>
 </template>
 
-
-<script setup>
+<script >
  
-console.log("Tv Show");
 
 </script>
 
 
 <style scoped>
- 
+
 
 
 </style>

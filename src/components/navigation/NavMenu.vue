@@ -26,10 +26,8 @@
         <span><font-awesome-icon icon="fa-regular fa-bell" size="2x" /></span>
         <button class="btn btn-user"></button>
       </div>
-     
-  
     </nav>
- 
+  
 </template>
 
 <script    setup>

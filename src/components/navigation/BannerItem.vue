@@ -1,11 +1,14 @@
 
 <template>
-   <section class="banner">
+   <section class="banner" :style="bannerStyl">
         <h1 class="banner-title">{{ movie?.title }}</h1>
         <p class="banner-info"> 
           {{ trimmer(movie?.overview) }}
         </p>
+           <div class="banner-action">
             <button class="banner-btn">Play</button>
+            <button class="banner-btn">More info</button>
+           </div>
    </section>
   
  </template>
@@ -13,10 +16,23 @@
  <script setup>
   import useMovieStore from "@/store/movie";
   import { storeToRefs } from 'pinia';
+  import {ref} from 'vue';
+ 
+ 
 
-   const {movie}=storeToRefs(useMovieStore());
-  const trimmer=(str)=>str.length > 100 && str.substring(0,150)
-   
+  const {movie}=storeToRefs(useMovieStore());
+
+  const trimmer=(str)=>str.length > 70 && str.substring(0,100)+"..."
+
+ 
+
+ 
+  const bannerStyl=ref({
+    backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.value?.backdrop_path}")`,
+  }); 
+
+
+
  </script>
  
  
@@ -26,26 +42,33 @@
  <style lang="scss" scoped>
  
  .banner{
-  background-image: url("@/assets/movie.jpg");
+
   background-repeat: no-repeat;
   //rgba(51, 51, 51, 0.5)
   background-size: cover;
   background-position: center center;
-  height: 45vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
+  outline: 1px solid red;
   gap: 0.5rem;
   padding: 1rem;
  }
 
  .banner-title{
   font-size: 3rem;
+ 
  }
 
  .banner-info{
   max-width: 60%;
+ }
+
+ .banner-action{
+  display: flex;
+  gap: 1rem;
  }
 
  .banner-btn{

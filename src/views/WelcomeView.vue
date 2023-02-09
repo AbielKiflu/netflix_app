@@ -1,5 +1,4 @@
 <script setup>
-  import Footer from "@/components/Footer";
  
   import NavigationMenu from "@/components/NavigationMenu";
   import GetStarted from "@/components/GetStarted";
