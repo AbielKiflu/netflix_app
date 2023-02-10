@@ -72,7 +72,8 @@ import CheckItem from "@/components/controls/CheckItem.vue";
 .control{
     display: flex;
     justify-content: space-between;
-
+    font-size: 0.8rem;
+    color: lightgray;
 }
 
 .footer{
