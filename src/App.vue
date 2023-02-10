@@ -27,6 +27,10 @@
 
 }
 
+main{
+  margin-top: 4rem;
+}
+
 ::selection{
   background-color: var(--primary-color);
 }

@@ -2,7 +2,7 @@
     <p>Movies</p>
 </template>
 
-<script >
+<script setup>
  
  
 

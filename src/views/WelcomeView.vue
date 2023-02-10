@@ -54,8 +54,7 @@ const services=[{
   <FAQ/>
 
  
- 
-  <Footer/>
+  
  
 </template>
 

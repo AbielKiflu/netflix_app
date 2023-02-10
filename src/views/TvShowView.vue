@@ -2,7 +2,8 @@
     <h2>Tv show</h2>
 </template>
 
-<script >
+
+<script setup>
  
 
 </script>
