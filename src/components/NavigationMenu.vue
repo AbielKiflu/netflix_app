@@ -1,4 +1,5 @@
 <script setup>
+    import { RouterLink } from "vue-router";
     import ButtonItem from "@/components/ButtonItem";
     import DropListItem from "@/components/DropListItem";
  
@@ -11,7 +12,9 @@
         </router-link>
             <ul>
                 <li><DropListItem/></li>
-                <li><ButtonItem text="Sign In"/></li>
+                <li><RouterLink to="/login">
+                    <ButtonItem text="Sign In"/>
+                    </RouterLink></li>
             </ul>
     </nav>
  

@@ -30,6 +30,13 @@ import CheckItem from "@/components/controls/CheckItem.vue";
                 />
             <span>Need help?</span>  
         </div>
+
+        <div class="footer">
+            <p class="footer-link">New to Netflix <a href="#">Sign up now</a></p>
+            <p class="footer-info">This page is protected by Google 
+                reCAPTCHA to ensure you're not a bot <a href="#">Learn more</a></p>
+        </div>
+
     </form>
   </header>
 
@@ -53,7 +60,7 @@ import CheckItem from "@/components/controls/CheckItem.vue";
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
-    max-width: 500px;
+    max-width: 430px;
     padding: 3rem;
     border-color: black;
     background-color: rgba(0 , 0, 0, 0.8);
@@ -68,8 +75,27 @@ import CheckItem from "@/components/controls/CheckItem.vue";
 
 }
 
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0;
+    p{
+        color: lightgray;
+    }
+}
+
+.footer-link a{
+    color: white;
  
- 
+}
+.footer-info{
+    font-size: 0.8rem;
+}
+
+.footer-info a{
+    color:skyblue;
+    text-decoration: none;
+}
  
  
  
