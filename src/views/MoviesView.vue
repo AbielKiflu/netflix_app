@@ -1,15 +1,16 @@
-<template>
-    <p>Movies</p>
-</template>
-
 <script setup>
- 
- 
 
 </script>
 
+<template>
+    <p>Movies</p>
 
-<style scoped>
+ 
+</template>
+ 
+
+<style lang="scss" scoped>
+
 
 
 

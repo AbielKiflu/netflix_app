@@ -5,6 +5,7 @@ import {createRouter,createWebHistory} from 'vue-router';
  import MoviesView from "@/views/MoviesView.vue";
  import MyListView from "@/views/MyListView.vue";
  import TvShowView from "@/views/TvShowView.vue";
+ import LoginView from "@/views/LoginView.vue";
  
 
  const router = createRouter({
@@ -16,6 +17,12 @@ import {createRouter,createWebHistory} from 'vue-router';
       path: '/',
       name: 'welcome',
       component: WelcomeView,
+
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: LoginView,
 
     },
  
