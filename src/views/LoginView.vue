@@ -2,7 +2,10 @@
 import BtnItem from "@/components/controls/BtnItem.vue";
 import FieldItem from "@/components/controls/FieldItem.vue";
 import CheckItem from "@/components/controls/CheckItem.vue";
-  
+
+
+ 
+
 
 </script>
 
@@ -53,7 +56,7 @@ import CheckItem from "@/components/controls/CheckItem.vue";
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 0.5rem solid var(--gray-color);
+ 
 }
  
 .login{

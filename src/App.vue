@@ -1,5 +1,5 @@
 <template>
-  <NavMenu/>
+  <NavMenu v-if="isLoggedIn"/>
   <main>
     <RouterView/>
   </main>
@@ -8,9 +8,18 @@
 
 
 <script setup>
+  import useLoginStore from "@/store/login";
+  import { storeToRefs } from 'pinia';
   import { RouterView } from "vue-router";
   import NavMenu from "@/components/navigation/NavMenu";
   import Footer from "@/components/Footer";
+
+
+  const {isLoggedIn}=storeToRefs(useLoginStore());
+
+   
+
+
 </script>
 
 
@@ -27,9 +36,7 @@
 
 }
 
-main{
-  margin-top: 4rem;
-}
+ 
 
 ::selection{
   background-color: var(--primary-color);
