@@ -23,9 +23,17 @@
  
       </div>
       <div class="navbar-right">
-        <span><font-awesome-icon icon="fa-regular fa-bell" size="2x" /></span>
-        <button class="btn btn-user"></button>
-      </div>
+        <font-awesome-icon icon="fa-regular fa-bell" size="2x" />
+        <button @click.prevent="toggleUser" class="btn btn-user"></button>
+      <div class="user">
+          <div v-show="userMenu" class="dropdown-user">
+            <ul>
+              <li>Profile</li>
+              <li>Manage account</li>
+            </ul>
+          </div>
+        </div>
+        </div>
     </nav>
   
 </template>
@@ -34,7 +42,12 @@
 import { RouterLink } from "vue-router";
 import { onBeforeUnmount, onMounted,ref } from "vue"
 
+const userMenu=ref(false);
 const scrollY =ref(false);
+
+const toggleUser=()=>{
+  userMenu.value=!userMenu.value;
+}
 
 function windowScroll() {
    if(window.scrollY > 50){
@@ -114,7 +127,40 @@ span{
     }
  }
 
+ .user{
+  position: relative;
+ 
+ }
+ .dropdown-user{
+  position: absolute;
+  right:0rem;
+  top: 3rem;
+  background-color: rgba(0 , 0, 0, 0.8);
+  border-radius: 0.3rem;
 
+  ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    li{
+      font-size: 0.9rem;
+      padding: 0.5rem;
+      border-bottom:1px solid black;
+     &:hover{
+      background-color: gray;
+     }
+    }
+  }
+ }
+
+ 
+
+
+
+ //@media only screen and (min-width: 450px) {
+ //big screen
+//}
 
 
 </style>

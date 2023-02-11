@@ -118,7 +118,6 @@ nav{
     gap: 0.5rem;
     max-width: 430px;
     padding: 3rem;
-    border-color: black;
     background-color: rgba(0 , 0, 0, 0.8);
     border-radius: 0.3rem;
    
