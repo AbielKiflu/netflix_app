@@ -30,6 +30,7 @@
             <ul>
               <li>Profile</li>
               <li>Manage account</li>
+              <li>Setting</li>
             </ul>
           </div>
         </div>
@@ -129,7 +130,7 @@ span{
 
  .user{
   position: relative;
- 
+  
  }
  .dropdown-user{
   position: absolute;
