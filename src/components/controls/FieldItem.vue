@@ -34,12 +34,13 @@ import { defineProps } from 'vue';
 
 <template>
   <div class="container">
-  <div class="input">
+  <div class="input" :class="{invalid:modelValue.length<=0}">
   <label :for="id">{{ label }}</label>
   <input
     class="field"
     :type="type" 
     :value="modelValue"
+    required
     :id="id"
     @input="$emit('update:modelValue',$event.target.value)"
      >
@@ -70,7 +71,7 @@ import { defineProps } from 'vue';
   padding: 0.5rem;
   background-color: var(--gray-color);
   border-radius: 0.3rem;
-  border-bottom: 0.2rem solid rgb(248, 106, 23);
+  //border-bottom: 0.2rem solid rgb(248, 106, 23);
  }
 
  .invalid{

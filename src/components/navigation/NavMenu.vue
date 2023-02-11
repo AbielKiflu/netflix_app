@@ -1,7 +1,7 @@
 <template>
  
     <nav class="navbar" :class="{'navbar-dark':scrollY}">
-      <div class="navbar-left"><RouterLink to="/">
+      <div class="navbar-left"><RouterLink to="/home">
         <svg xmlns="http://www.w3.org/2000/svg" 
       height="80" width="100" viewBox="-153.6 -69.1855 1331.2 415.113">
       <path fill="#d81f26" d="M140.803 258.904c-15.404 
