@@ -3,9 +3,33 @@ import BtnItem from "@/components/controls/BtnItem.vue";
 import FieldItem from "@/components/controls/FieldItem.vue";
 import CheckItem from "@/components/controls/CheckItem.vue";
 import { RouterLink } from "vue-router";
+import {ref} from "vue";
+import {getAuth,signInWithEmailAndPassword} from "firebase/auth";
+import useLoginStore from "@/store/login";
+//import { storeToRefs } from 'pinia';
+import { useRouter } from "vue-router";
 
+const router=useRouter();
+const email=ref("");
+const password=ref("");
+
+//const {login}=storeToRefs(useLoginStore());
+const {setLoginState}=useLoginStore();
  
+const handleLogin=()=>{
+    signInWithEmailAndPassword(getAuth(),email.value,password.value)
+    .then((result)=>{
+        console.log(result);
+        setLoginState();
+        router.push("/home");
+    })
+    .catch((error)=>{
+        console.log("Login failed" + error);
+    });
+     
+}
 
+//signOut
 
 </script>
 
@@ -31,16 +55,19 @@ import { RouterLink } from "vue-router";
     <form class="login">
         <h1>Sign In</h1>
         <FieldItem 
+            v-model="email"
             type="text"
             label="Email"
             id="email" />
+
         <FieldItem 
+            v-model="password"
             type="password"
             label="Password"
             id="password"
              /> 
  
-        <BtnItem text="Sign In"/>
+        <BtnItem text="Sign In" @click.prevent="handleLogin"/>
 
         <div class="control">
             <CheckItem

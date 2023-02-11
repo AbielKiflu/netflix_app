@@ -1,5 +1,5 @@
 <template>
-  <NavMenu v-if="isLoggedIn"/>
+  <NavMenu v-if="login"/>
   <main>
     <RouterView/>
   </main>
@@ -15,8 +15,9 @@
   import Footer from "@/components/Footer";
 
 
-  const {isLoggedIn}=storeToRefs(useLoginStore());
-
+  const {login}=storeToRefs(useLoginStore());
+  
+ 
    
 
 

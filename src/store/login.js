@@ -1,30 +1,19 @@
 import { defineStore } from "pinia";
+import {ref} from "vue";
 
 
-const  useLoginStore = defineStore("isLoggedIn", 
-{
-    state:()=>{
-        return {
-            isLoggedIn:false
-        };
-    },
-
-    actions:{
-        setIsLoggedIn(logged=false){
-            this.isLoggedIn=logged;
-        },
  
-},
 
-getters:{
-    getLoginState(state){
-        return state.isLoggedIn;
+
+  const useLoginStore = defineStore('login', () => {
+    const login = ref(false)
+  
+    
+    function setLoginState() {
+        login.value=!login.value
     }
-
-}
-
-}
-);
-
-
+  
+    return { login, setLoginState }
+  })
+  
 export default useLoginStore;
