@@ -11,10 +11,6 @@ import { defineProps } from 'vue';
       type: String,
       default: "",
     },
-    error: {
-      type: String,
-      default: "Please enter a valid value",
-    },
     placeholder:{
       type: String,
       default: ""
@@ -45,7 +41,7 @@ import { defineProps } from 'vue';
     @input="$emit('update:modelValue',$event.target.value)"
      >
   </div>
-  <span v-show="modelValue.length<=0" class="input-error">{{ error }}</span>
+  <span v-show="modelValue.length<=0" class="input-error">Enter a valid {{ label }}</span>
   </div>
 
 </template>
@@ -81,6 +77,7 @@ import { defineProps } from 'vue';
  .field{
   display: block;
   width: 100%;
+  background: transparent;
   border-radius: 0.3rem;
   text-align: left;
   color: lightgray;
