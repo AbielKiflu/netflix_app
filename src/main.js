@@ -12,8 +12,7 @@ import { faPlus,faCaretDown,faAngleRight,faXmark,faGlobe,faCirclePlay,faCirclePl
 import firebase from 'firebase/compat/app';
 import {firebaseConfig} from "./firebase";
 
-
-
+ 
 firebase.initializeApp(firebaseConfig);
  
 
