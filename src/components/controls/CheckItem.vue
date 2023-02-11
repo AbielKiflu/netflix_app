@@ -41,4 +41,8 @@ import { defineProps } from 'vue';
   gap: 0.5em;
  }
 
+
+.field{
+  background-color:  lightgray;
+}
 </style>

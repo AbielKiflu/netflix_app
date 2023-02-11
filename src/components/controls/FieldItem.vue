@@ -67,10 +67,14 @@ import { defineProps } from 'vue';
  .input{
   display: flex;
   flex-direction: column;
-  border-bottom: 0.2rem solid rgb(248, 106, 23);
   padding: 0.5rem;
   background-color: var(--gray-color);
   border-radius: 0.3rem;
+  border-bottom: 0.2rem solid rgb(248, 106, 23);
+ }
+
+ .invalid{
+  border-bottom: 0.2rem solid rgb(248, 106, 23);
  }
 
  .field{

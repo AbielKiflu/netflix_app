@@ -66,6 +66,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    border-bottom: 0.5rem solid var(--gray-color);
  }
 
  h1,h2,h3,h4,h5,h6{
