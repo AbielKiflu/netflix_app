@@ -1,4 +1,11 @@
-# netflix_app
+# Project Netflix clone
+
+
+## Technologies used
+1. Vue3 composite api
+2. TMDB api
+3. Firebase
+4. SCSS
 
 ## Project setup
 ```
