@@ -7,6 +7,17 @@
 3. Firebase
 4. SCSS
 
+##  Feature to be added
+1.Strip payment
+
+
+##  Installation guide
+1. clone from git
+2. create .env file
+3. ....
+
+
+
 ## Project setup
 ```
 yarn install
@@ -21,11 +32,5 @@ yarn serve
 ```
 yarn build
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ 
+ 
