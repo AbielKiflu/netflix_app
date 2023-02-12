@@ -1,6 +1,8 @@
 <script setup>
-const slideRef = ref(null)
 import {defineProps,ref} from "vue";
+
+const slideRef = ref(null)
+
 const props=defineProps({
     movies: {
         type:Object,
