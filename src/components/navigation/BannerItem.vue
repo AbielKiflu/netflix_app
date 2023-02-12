@@ -16,20 +16,22 @@
  <script setup>
   import useMovieStore from "@/store/movie";
   import { storeToRefs } from 'pinia';
-  import {ref} from 'vue';
- 
+  import {ref,watchPostEffect} from 'vue';
+  const bannerStyl=ref({});
  
 
   const {movie}=storeToRefs(useMovieStore());
 
-  const trimmer=(str)=>str.length > 70 && str.substring(0,100)+"..."
+  const trimmer=(str)=>str?.length > 70 && str.substring(0,100)+"..."
 
  
 
+  watchPostEffect(()=>{
+    bannerStyl.value.backgroundImage=`url("https://image.tmdb.org/t/p/original/${movie?.value?.backdrop_path}")`;
+  
  
-  const bannerStyl=ref({
-    backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.value?.backdrop_path}")`,
-  }); 
+  })
+
 
 
 

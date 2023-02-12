@@ -26,13 +26,7 @@
         <font-awesome-icon icon="fa-regular fa-bell" size="2x" />
         <button @click.prevent="toggleUser" class="btn btn-user"></button>
       <div class="user">
-          <div v-show="userMenu" class="dropdown-user">
-            <ul>
-              <li>Profile</li>
-              <li>Manage account</li>
-              <li>Setting</li>
-            </ul>
-          </div>
+          <DropdownItem v-show="userMenu" :items="items" />
         </div>
         </div>
     </nav>
@@ -42,6 +36,21 @@
 <script    setup>
 import { RouterLink } from "vue-router";
 import { onBeforeUnmount, onMounted,ref } from "vue"
+import DropdownItem from "@/components/controls/DropdownItem.vue";
+const items=[
+  {
+    id:1,
+    value:"Profile",
+  },
+  {
+    id:2,
+    value:"Account Manage",
+  },
+  {
+    id:3,
+    value:"Settings",
+  }
+]
 
 const userMenu=ref(false);
 const scrollY =ref(false);
@@ -132,28 +141,7 @@ span{
   position: relative;
   
  }
- .dropdown-user{
-  position: absolute;
-  right:0rem;
-  top: 3rem;
-  background-color: rgba(0 , 0, 0, 0.8);
-  border-radius: 0.3rem;
 
-  ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    width: 10rem;
-    li{
-      font-size: 0.9rem;
-      padding: 0.5rem;
-      border-bottom:1px solid black;
-     &:hover{
-      background-color: gray;
-     }
-    }
-  }
- }
 
  
 

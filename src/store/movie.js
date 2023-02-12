@@ -5,7 +5,7 @@ const  useMovieStore = defineStore("movie",
 {
     state:()=>{
         return {
-            movie:{}
+            movie:null,
         };
     },
 
