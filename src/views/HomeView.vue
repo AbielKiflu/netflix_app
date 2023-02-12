@@ -1,8 +1,10 @@
 
 <template>
    <BannerItem />
- 
-   <CardItem :movies="movieList" header="Movies"/>
+   <CardItem :movies="moviesPopular" header="Popular"/>
+   <CardItem :movies="movieUpcoming" header="Upcomming"/>
+   <CardItem :movies="moviesLatest" header="Latest"/>
+   <CardItem :movies="moviesTopRated" header="Top Rated"/>
    
 </template>
 
@@ -15,28 +17,35 @@
    import CardItem from "@/components/card/CardItem";
 
    const {movie}=storeToRefs(useMovieStore());
-   const movieList=ref([]);
+   const moviesPopular=ref([]);
+   
+   const movieUpcoming=ref([]);
+   const moviesTopRated=ref([]);
+   //const moviesLatest=ref([]);
+
+
+   const fetchMovie=async (path)=>{
+      try {
+   const response = await fetch(path)
+      return await response.json()
+ 
+   } catch (error) {
+      return error.json()
+   }
+   }
 
    watchPostEffect(async () => {
-   try {
-   const response = await fetch(reqests.movies)
-   movieList.value = await response.json()
-   console.log(movieList.value);
-   } catch (error) {
-      movieList.value = 'Error! Could not reach the API. ' + error
-   }
+      movie.value=await fetchMovie(reqests.movie)
+      moviesPopular.value=await fetchMovie(reqests.moviesPopular)
+      movieUpcoming.value=await fetchMovie(reqests.moviesUpcoming)
+      moviesTopRated.value=await fetchMovie(reqests.moviesTopRated)
+      //moviesLatest.value=await fetchMovie(reqests.moviesLatest)
+      
+    
 
    });
   
-   watchPostEffect(async () => {
-   try {
-   const response = await fetch(reqests.movie)
-   movie.value = await response.json()
-   } catch (error) {
-      movie.value = 'Error! Could not reach the API. ' + error
-   }
-
-   });
+ 
     
 
 </script>
