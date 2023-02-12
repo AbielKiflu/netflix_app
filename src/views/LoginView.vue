@@ -6,14 +6,14 @@ import { RouterLink } from "vue-router";
 import {ref} from "vue";
 import {getAuth,signInWithEmailAndPassword} from "firebase/auth";
 import useLoginStore from "@/store/login";
-//import { storeToRefs } from 'pinia';
+import { storeToRefs } from 'pinia';
 import { useRouter } from "vue-router";
 
 const router=useRouter();
 const email=ref("");
 const password=ref("");
 
-//const {login}=storeToRefs(useLoginStore());
+const {login}=storeToRefs(useLoginStore());
 const {setLoginState}=useLoginStore();
  
 const handleLogin=()=>{
@@ -21,10 +21,13 @@ const handleLogin=()=>{
     .then((result)=>{
         console.log(result);
         setLoginState();
-        router.push("/home");
+        localStorage.setItem("login",login.value);
+         router.push("/home");
+        
     })
     .catch((error)=>{
         console.log("Login failed" + error);
+       
     });
      
 }
