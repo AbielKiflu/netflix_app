@@ -24,7 +24,7 @@ library.add(faPlus,faBell,faCaretDown,faAngleRight,faXmark,faGlobe,faCirclePlay,
 const app= createApp(App);
 
 app.config.errorHandler = (err) => {
-   console.log(err);
+   console.log(err + ": " + err.message);
   }
 
 app.use(createPinia());
