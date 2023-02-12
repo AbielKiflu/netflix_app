@@ -3,18 +3,17 @@ import {defineProps,ref} from "vue";
 
 const slideRef = ref(null)
 
-const props=defineProps({
+defineProps({
     movies: {
         type:Object,
+    },
+    header: {
+        type:String,
     }
 })
 
 
-//const slides=ref([...props.movies.results]);
-//const current=ref(0);
-//const showSlides=ref([]);
-
-console.log(props.movies.results)
+ 
 
 const selectMovie=()=>{
     console.log("hi");
@@ -34,6 +33,10 @@ const previousHandler=() =>{
 
 <template>
     
+<div>
+    <p class="header">
+        {{ header }}
+    </p>
     <div class="carousel">
         <button class="previous" @click.prevent="previousHandler">{{ "<" }}</button>
         <div class="slides" ref="slideRef">
@@ -43,11 +46,19 @@ const previousHandler=() =>{
         </div>
         <button class="next" @click.prevent="nextHandler">{{ ">" }}</button>
     </div>
+</div>
    
 </template>
 
 
 <style lang="scss" scoped>
+
+    .header{
+        font-size: 1.5rem;
+        color: lightgray;
+        padding: 0.5rem;
+
+    }
 
     .carousel{
         position: relative;

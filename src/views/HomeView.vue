@@ -1,8 +1,8 @@
 
 <template>
    <BannerItem />
-   <h2>Movies</h2>
-   <CardItem :movies="movieList"/>
+ 
+   <CardItem :movies="movieList" header="Movies"/>
    
 </template>
 
