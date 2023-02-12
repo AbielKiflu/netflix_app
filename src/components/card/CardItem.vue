@@ -16,6 +16,10 @@ const props=defineProps({
 
 console.log(props.movies.results)
 
+const selectMovie=()=>{
+    console.log("hi");
+}
+
 const nextHandler=() =>{
     slideRef.value.scrollLeft +=120;
   
@@ -33,8 +37,8 @@ const previousHandler=() =>{
     <div class="carousel">
         <button class="previous" @click.prevent="previousHandler">{{ "<" }}</button>
         <div class="slides" ref="slideRef">
-        <div class="card" v-for="movie in movies.results" :key="movie.id">
-         <img :src="`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`" :alt="movie.title">
+        <div class="card" v-for="movie in movies.results" :key="movie.id"  >
+         <img @click="selectMovie" :src="`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`" :alt="movie.title">
         </div>
         </div>
         <button class="next" @click.prevent="nextHandler">{{ ">" }}</button>
