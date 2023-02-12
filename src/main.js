@@ -11,6 +11,7 @@ import { faPlus,faCaretDown,faAngleRight,faXmark,faGlobe,faCirclePlay,faCirclePl
 
 import firebase from 'firebase/compat/app';
 import {firebaseConfig} from "./firebase";
+const pinia=createPinia();
 
  
 firebase.initializeApp(firebaseConfig);
@@ -19,7 +20,10 @@ firebase.initializeApp(firebaseConfig);
 library.add(faPlus,faBell,faCaretDown,faAngleRight,faXmark,faGlobe,faCirclePlay,faCirclePlus,faCircleChevronDown,faTwitter,faFacebookF,faInstagram,faYoutube,faThumbsUp );
 
 
-
+//watch(pinia.state,(state)=>{
+  //localStorage.setItem("login", JSON.stringify(state.login));
+//},
+//{ deep: true });
 
 const app= createApp(App);
 
@@ -27,7 +31,7 @@ app.config.errorHandler = (err) => {
    console.log(err + ": " + err.message);
   }
 
-app.use(createPinia());
+app.use(pinia);
 app.use(router);
 app.component('font-awesome-icon', FontAwesomeIcon)
 app.mount('#app')

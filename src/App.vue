@@ -13,12 +13,12 @@
   import { RouterView } from "vue-router";
   import NavMenu from "@/components/navigation/NavMenu";
   import Footer from "@/components/Footer";
-
-
-  const {login}=storeToRefs(useLoginStore());
   
+
  
-   
+  const {login}=storeToRefs(useLoginStore());
+ 
+ 
 
 
 </script>

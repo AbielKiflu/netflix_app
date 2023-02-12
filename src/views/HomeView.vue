@@ -1,18 +1,30 @@
 
 <template>
    <BannerItem />
+   <CardItem :movies="movieList"/>
 </template>
 
 <script setup>
-   import { watchPostEffect } from 'vue';
+   import { watchPostEffect,ref } from 'vue';
    import reqests from "@/api/request";
    import BannerItem from "@/components/navigation/BannerItem";
    import useMovieStore from "@/store/movie";
    import { storeToRefs } from 'pinia';
+   import CardItem from "@/components/card/CardItem";
 
    const {movie}=storeToRefs(useMovieStore());
-   //https://developers.themoviedb.org/3/account/get-account-details
+   const movieList=ref([]);
 
+   watchPostEffect(async () => {
+   try {
+   const response = await fetch(reqests.movies)
+   movieList.value = await response.json()
+   console.log(movieList.value);
+   } catch (error) {
+      movieList.value = 'Error! Could not reach the API. ' + error
+   }
+
+   });
   
    watchPostEffect(async () => {
    try {
