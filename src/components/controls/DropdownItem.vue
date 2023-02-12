@@ -1,6 +1,6 @@
 <script setup>
 import { defineProps } from 'vue';
-
+import {RouterLink} from 'vue-router';
 defineProps({
    items: {
     type: Array,
@@ -14,7 +14,7 @@ defineProps({
 <template>
 <div  class="dropdown-user" >
             <ul :items="items" v-for="item in items" :key="item.id">
-                <li>{{ item.value }}</li>
+                <li><RouterLink :to="item.link"/>{{ item.value }}<RouterLink/></li>
             </ul>
           </div>
 </template>
