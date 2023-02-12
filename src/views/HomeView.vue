@@ -1,7 +1,9 @@
 
 <template>
    <BannerItem />
+   <h2>Movies</h2>
    <CardItem :movies="movieList"/>
+   
 </template>
 
 <script setup>
