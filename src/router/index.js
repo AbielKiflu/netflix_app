@@ -5,6 +5,7 @@ import {createRouter,createWebHistory} from 'vue-router';
  import MyListView from "@/views/MyListView.vue";
  import TvShowView from "@/views/TvShowView.vue";
  import LoginView from "@/views/LoginView.vue";
+ import LogoutView from "@/views/LogoutView.vue";
  import {getAuth,onAuthStateChanged} from "firebase/auth";
 
  const router = createRouter({
@@ -16,6 +17,12 @@ import {createRouter,createWebHistory} from 'vue-router';
       path: '/',
       name: 'welcome',
       component: WelcomeView,
+
+    },
+    {
+      path: '/logout',
+      name: 'logout',
+      component: LogoutView,
 
     },
     {

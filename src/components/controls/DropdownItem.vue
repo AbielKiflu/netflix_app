@@ -13,8 +13,8 @@ defineProps({
 
 <template>
 <div  class="dropdown-user" >
-            <ul :items="items" v-for="item in items" :key="item.id">
-                <li><RouterLink :to="item.link"/>{{ item.value }}<RouterLink/></li>
+            <ul >
+                <li :items="items" v-for="item in items" :key="item.id"><RouterLink :to="item.link"/>{{ item.value }}<RouterLink/></li>
             </ul>
           </div>
 </template>
@@ -32,6 +32,7 @@ defineProps({
     display: flex;
     flex-direction: column;
     width: 10rem;
+    cursor: pointer;
     li{
       font-size: 0.9rem;
       padding: 0.5rem;

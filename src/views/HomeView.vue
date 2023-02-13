@@ -3,7 +3,6 @@
    <BannerItem />
    <CardItem :movies="moviesPopular" header="Popular"/>
    <CardItem :movies="movieUpcoming" header="Upcomming"/>
-   <CardItem :movies="moviesLatest" header="Latest"/>
    <CardItem :movies="moviesTopRated" header="Top Rated"/>
    
 </template>
@@ -18,7 +17,6 @@
 
    const {movie}=storeToRefs(useMovieStore());
    const moviesPopular=ref([]);
-   
    const movieUpcoming=ref([]);
    const moviesTopRated=ref([]);
    //const moviesLatest=ref([]);
