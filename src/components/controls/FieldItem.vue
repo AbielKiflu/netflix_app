@@ -67,7 +67,19 @@ import { defineProps } from 'vue';
   padding: 0.5rem;
   background-color: var(--gray-color);
   border-radius: 0.3rem;
+
+  &:focus  ~ label{
+    color: red;
+  };
+
  }
+
+ label{
+  position: relative;
+  top: 1rem;
+ }
+
+
 
  .invalid{
   border-bottom: 0.2rem solid rgb(248, 106, 23);

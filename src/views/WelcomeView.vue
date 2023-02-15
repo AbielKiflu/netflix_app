@@ -39,9 +39,9 @@ const services=[{
     <h2>
       Watch anywhere. Cancel anytime.
     </h2>
-    <h4>
+    <p>
       Ready to watch? Enter your email to create or restart your membership.
-    </h4>
+    </p>
     <GetStarted/>
   </div>
   </header>
