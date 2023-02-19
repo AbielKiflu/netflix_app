@@ -1,6 +1,5 @@
 .DS_Store
 node_modules
-/dist
 src/firebase/firebaseInit.js
 src/firebase/index.js
 # local env files
