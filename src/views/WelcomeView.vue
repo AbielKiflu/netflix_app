@@ -1,9 +1,9 @@
 <script setup>
  
-  import NavigationMenu from "@/components/NavigationMenu";
-  import GetStarted from "@/components/GetStarted";
-  import FAQ from "@/components/FAQ";
-  import ServiceComp from "@/components/ServiceComp";
+import NavigationMenu from "@/components/NavigationMenu";
+import GetStarted from "@/components/GetStarted";
+import FAQ from "@/components/FAQ";
+import ServiceComp from "@/components/ServiceComp";
 
 const services=[{
   id:1,
