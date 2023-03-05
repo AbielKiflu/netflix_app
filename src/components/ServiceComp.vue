@@ -1,6 +1,5 @@
 <template>
-   
-        <div class="service" :class="{even:id%2==0, odd:id%2==1}">
+    <div class="service" :class="{even:id%2==0, odd:id%2==1}">
     <div class="detail" >
         <h1>{{ title}}</h1>
         <h2>{{ description }}</h2>
@@ -30,13 +29,13 @@
 
     
     .service {
+        padding: 2rem;
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
-        gap:2rem;
-        padding: 2rem 0;
+        justify-content: space-evenly;
+        align-items: center;
         border-bottom: 0.5rem solid var(--gray-color);
+        
     }
 
     .odd{
@@ -47,22 +46,16 @@
         flex-direction: row;
     }
 
- 
-
-  
- 
-
     .detail{
         color:var(--light-color);
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 1rem;
-        max-width: 40rem;
+        max-width: 35rem;
     }
     h1{
         font-weight: bold;
-       font-size: 3rem;
+       font-size: 2.5rem;
     }
    
  
@@ -72,4 +65,8 @@
         height:auto;
         
     }
+ 
+ 
+
+
 </style>

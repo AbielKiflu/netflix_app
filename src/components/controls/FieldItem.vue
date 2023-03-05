@@ -67,7 +67,7 @@ import { defineProps } from 'vue';
   padding: 0.5rem;
   background-color: var(--gray-color);
   border-radius: 0.3rem;
-
+  
   &:focus  ~ label{
     color: red;
   };

@@ -55,7 +55,7 @@
 body {
   background-color: #000000;
   color: var(--light-color);
- 
+  scroll-behavior: smooth;
 }
 
 </style>

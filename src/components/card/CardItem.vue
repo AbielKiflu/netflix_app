@@ -72,6 +72,7 @@ const previousHandler=() =>{
         justify-content: space-between;
         gap: 0.5rem;
         overflow:hidden;
+        scroll-behavior: smooth;
         scroll-snap-type: x;
         scroll-snap-type: x mandatory;
         transition: all 0.5s ease-in-out;
