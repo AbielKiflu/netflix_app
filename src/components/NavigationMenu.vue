@@ -26,10 +26,11 @@
 
 <style lang="scss" scoped>
 .nav{
-    //background: linear-gradient(black 20%,rgba(0, 0, 0, 0.9) 40%,transparent);
+    background: linear-gradient(black 20%,rgba(0, 0, 0, 0.9) 40%,transparent);
     display: flex;
+    padding: 1rem;
     justify-content: space-between;
-    max-width: calc(100% - 3rem);
+   
  
     
     ul{
@@ -50,7 +51,7 @@
 
 
 .logo{
- max-width: 8rem;
+ max-width: 7rem;
  
 }
 

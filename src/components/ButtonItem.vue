@@ -22,7 +22,7 @@ button{
   background-color:var(--primary-color);
   border-radius: 0.2rem;
   border-color: transparent;
-  padding: 0.3rem 1rem;
+  padding: 0.2rem 0.5rem;
 
   &:hover {
         background-color:rgb(179, 22, 22);
