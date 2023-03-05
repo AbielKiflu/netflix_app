@@ -71,19 +71,14 @@ const services=[{
     border-bottom: 0.5rem solid var(--gray-color);
     
     .center{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap:1rem;
-        align-items: center;
-        height: 100%;
-      
+      margin: auto;
+      padding: 75px 0;
       }
 }
  
  
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,p{
   color: var(--light-color);
   text-align: center;
  
@@ -93,11 +88,7 @@ h1,h2,h3,h4,h5,h6{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 800px) {
-  h1{
-  font-weight: bold;
-  font-size: 3rem;
  
-}
 }
 
  

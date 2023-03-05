@@ -32,9 +32,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 1rem;
     margin: 1rem 0;
-    background-color: #000000;
+    background-color: transparent;
  }
 .emailcontainer{
     background-color: rgb(255, 255, 255);
@@ -42,18 +42,18 @@
     justify-content: flex-start;
     align-items: center;
     padding: 1rem;
-    border-radius: 0.3rem;
+    
 }
 .callToAction{
     background-color: var(--primary-color);
     border-color:transparent;
     color:white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1.5rem;
     padding: 0.5rem;
-    border-radius: 0.3rem;
+ 
 
     &:hover {
         background-color:rgb(179, 22, 22);
