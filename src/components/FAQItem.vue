@@ -20,7 +20,7 @@ defineProps(
 <template>
      <div class="faqItem"> 
         <div class="question"> 
-            <h2>{{ question }}</h2>
+            <h3>{{ question }}</h3>
             <span  @click="toggle">
                 <font-awesome-icon v-if="!isToggled" icon="fa-solid fa-plus" size="2x"  inverse/> 
                 <font-awesome-icon v-if="isToggled" icon="fa-solid fa-xmark" size="2x"  inverse/> 
@@ -44,7 +44,7 @@ defineProps(
     color: var(--light-color);
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 1rem;
 
     
     }
