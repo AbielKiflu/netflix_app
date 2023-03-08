@@ -10,7 +10,7 @@ import { faThumbsUp,faBell } from '@fortawesome/free-regular-svg-icons';
 import { faPlus,faCaretDown,faAngleRight,faXmark,faGlobe,faCirclePlay,faCirclePlus,faCircleChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import firebase from 'firebase/compat/app';
-import {firebaseConfig} from "./firebase";
+import {firebaseConfig} from "@/firebase";
 const pinia=createPinia();
 
  
